@@ -43,11 +43,12 @@ public class Employee {
 
     public void setPayRate(double payRate) {
         this.payRate = payRate;
+
     }
 
-    public double getGrossPay(double payRate, double hoursWorked) {
-        double payrate = getHoursWorked(hoursWorked) * getPayRate(payRate);
-        return payrate;
+    public static double getGrossPay(double payRate, double hoursWorked) {
+        double wage = payRate * hoursWorked;
+        return wage;
     }
 
 
