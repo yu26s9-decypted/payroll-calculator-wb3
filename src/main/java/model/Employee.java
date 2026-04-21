@@ -52,6 +52,14 @@ public class Employee {
     }
 
 
+    public String toString() {
+        return "Employee: " +
+                "employee_id =" + this.employeeId +
+                "employee_name = " + this.name +
+                "hours_worked =" + this.hoursWorked +
+                "payrate =" + this.payRate;
+    }
+
 
 
 }
